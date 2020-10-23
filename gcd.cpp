@@ -1,7 +1,9 @@
 #include<iostream>
 using namespace std;
-int gcd(int a, int b, int& x, int& y) {
-    if (b == 0) {
+int gcd(int a, int b, int& x, int& y) 
+{
+    if (b == 0)
+    {
         x = 1;
         y = 0;
         return a;
@@ -13,7 +15,8 @@ int gcd(int a, int b, int& x, int& y) {
     return d;
 }
 
-int main(){
+int main()
+{
 	int a,b,x,y;
 	cin>>a>>b;
 	int gc=gcd(a,b,x,y);
